@@ -1,0 +1,18 @@
+
+
+{% extends "base.html" %} {% block content %}
+<h1>{{user.username}}'s Blog Posts</h1>
+
+<ul style="list-style-type:none">
+    {% for entry in userEntries[::-1] %}
+    <li>
+        <a href="./blog?id={{entry.id}}&owner_id={{entry.owner_id}}">
+            <h2>{{entry.title}}</h2>
+        </a>
+    </li>
+    <li>{{entry.body}}</li>
+    <li>written by {{entry.owner.username}}</li>
+    <hr></hr>
+    {% endfor %}
+</ul>
+<a class="bottom" href="#top">top of page</a> {% endblock %}

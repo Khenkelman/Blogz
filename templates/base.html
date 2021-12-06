@@ -1,0 +1,37 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
+</head>
+
+<div class="container">
+    <header>
+        <a name="top"></a>
+        <nav class="navbar navbar-light bg-faded">
+            <a href="/" class="btn btn-outline" type="button">home</a>
+            <a href="/blog" class="btn btn-outline" type="button">all posts</a>
+            <a href="/newpost" class="btn btn-outline" type="button">new post</a>
+            <a href="/login" class="btn btn-outline" type="button">login</a>
+            <a href="/logout" class="btn btn-outline" type="button">logout</a>
+        </nav>
+    </header>
+
+    <body>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+        <ul>
+            {% for category,message in messages %}
+            <li class="{{category}}">{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endwith %} {% block content %} {% endblock %}
+</div>
+
+</html>

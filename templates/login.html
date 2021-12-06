@@ -1,0 +1,24 @@
+
+{% extends "base.html" %} {% block content %}
+<a href="/signup" id="create" class="btn btn-outline" type="button">Create New Account</a>
+<h1>Log in</h1>
+<form action="/login" method="POST">
+    <table>
+        <tr>
+            <td><label for="username">Name</label></td>
+            <td>
+                <span><input class="entry" name="username" type="text" value="{{username}}"></span>
+                <span class="error">{{username_error}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+                <span><input class="entry" name="password" type="password" , value="{{password}}"></span>
+                <span class="error">{{password_error}}</span>
+            </td>
+        </tr>
+    </table>
+    <input class="button" class="login" type="submit" value="Login">
+</form>
+{% endblock %}

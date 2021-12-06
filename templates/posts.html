@@ -1,0 +1,20 @@
+
+{% extends "base.html" %} {% block content %}
+<h1>Build a Blog</h1>
+{% if entries|length == 0 %}
+<p>No entries yet.</p>
+{% else %}
+
+<ul style="list-style-type:none">
+    {% for entry in entries[::-1] %}
+    <li>
+        <a href="./blog?id={{entry.id}}&owner_id={{entry.owner_id}}">
+            <h2>{{entry.title}}</h2>
+        </a>
+    </li>
+    <li>{{entry.body}}</li>
+    <li><a href="./blog?user={{entry.owner_id}}">written by {{entry.owner.username}}</a></li>
+    <hr></hr>
+    {% endfor %}
+</ul>
+<a class="bottom" href="#top">top of page</a> {% endif %} {% endblock %}

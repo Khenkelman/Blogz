@@ -1,0 +1,129 @@
+.error {
+    background-color: firebrick;
+    font-weight: bold;
+    color: #d6d6ba;
+    margin: 0em 35em 1em 4em;
+    text-align: center
+}
+
+body {
+    font-family: Verdana;
+    margin: auto;
+    color: #d6d6ba;
+    width: 50%;
+}
+
+nav a {
+    padding-right: 2em;
+    text-align: center;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid #d6d6ba;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+    padding: 2em 2em 0em 2em;
+}
+
+h1 {
+    text-align: center;
+    padding: 2em 2em 1em 2em;
+}
+
+.entry {
+    color: #696969;
+}
+
+.btn,
+.button,
+.bottom {
+    width: 100px;
+    padding: 0.5em;
+    margin: 2em;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+a.bottom {
+    position: fixed;
+    bottom: 1em;
+    right: 7em;
+    width: 6em;
+}
+
+input.button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background: gray;
+    color: #d6d6ba;
+    border-style: none;
+}
+
+textarea,
+input {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background-color: #d6d6ba;
+}
+
+body {
+    background-color: #423e37;
+}
+
+.btn,
+.bottom {
+    background: gray;
+    color: #d6d6ba;
+}
+
+h1,
+a:link {
+    color: #d6ae6b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9a9e91;
+}
+
+h2:hover,
+a:visited.btn,
+a:visited.bottom {
+    color: #d6d6ba;
+}
+
+.bloggers {
+    text-align: center;
+    margin-right: 2em;
+}
+
+.login {
+    margin: 50px;
+}
+
+table {
+    margin: 30px 50px 50px 50px;
+}
+
+#create {
+    text-align: center;
+    margin-left: 20em;
+    margin-top: 5em;
+    width: 12em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.entry {
+    color: #696969;
+    margin: auto;
+    width: 100%;
+}
